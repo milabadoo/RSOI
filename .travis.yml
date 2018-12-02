@@ -6,3 +6,4 @@ install:
   - dotnet restore
 script:
   - dotnet publish ./RSOIlab1/RSOIlab1.csproj
+  - dotnet test ./Test/Tests.csproj
