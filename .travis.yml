@@ -7,7 +7,7 @@ install:
 script:
   - dotnet publish ./RSOIlab1/RSOIlab1.csproj
   - dotnet test ./Tests/Tests.csproj
- deploy:
+deploy:
   provider: heroku
   app: milarsoi
   api_key: 37396626-d2ab-428b-baa0-acb5471d806d
