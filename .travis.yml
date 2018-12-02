@@ -7,7 +7,6 @@ install:
 script:
   - dotnet publish ./RSOIlab1/RSOIlab1.csproj
   - dotnet test ./Tests/Tests.csproj
-
  deploy:
   provider: heroku
   app: milarsoi
