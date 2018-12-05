@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace RSOIlab1.Controllers
 {
@@ -12,9 +8,9 @@ namespace RSOIlab1.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get(int id1, int id2)
+        public ActionResult<string> Get(int id1)
         {
-            return new string[] { "Hello world!" };
+            return  ("Hello world!");
         }
 
         // GET api/values/5

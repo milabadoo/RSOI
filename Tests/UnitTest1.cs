@@ -20,14 +20,14 @@ namespace Tests
         }
 
         [Theory]
-        [InlineData(1,2)]
-        [InlineData(10,555)]
-        public void Test2(int a, int b)
+        [InlineData(2)]
+        [InlineData(10)]
+        public void Test2(int a)
         {
             ValuesController vs = new ValuesController();
-            var actionResult = vs.Get(a,b);
-            var result = actionResult.Value;
-            Assert.Equal("[\"Hello world!\"]", result.ToString());
+            var actionResult = vs.Get(a);
+            String result = actionResult.Value;
+            Assert.Equal("Hello world!", result);
 
         }
     }
