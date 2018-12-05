@@ -27,7 +27,7 @@ namespace Tests
             ValuesController vs = new ValuesController();
             var actionResult = vs.Get(a,b);
             var result = actionResult.Result;
-            Assert.Equal("Hello world!", result.ToString());
+            Assert.Equal("[\"Hello world!\"]", result.ToString());
 
         }
     }
