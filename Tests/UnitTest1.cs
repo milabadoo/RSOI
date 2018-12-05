@@ -1,5 +1,7 @@
 using System;
 using Xunit;
+using RSOIlab1.Controllers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Tests
 {
@@ -8,7 +10,11 @@ namespace Tests
         [Fact]
         public void Test1()
         {
-            Assert.True(true);
+            ValuesController vs = new ValuesController();
+            var actionResult = vs.Get("2");
+            String result = actionResult.Value;
+            Assert.Equal("2", result);
+           
         }
     }
 }

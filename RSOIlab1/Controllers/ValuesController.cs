@@ -12,16 +12,16 @@ namespace RSOIlab1.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<string>> Get(int id1, int id2)
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "Hello world!" };
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<string> Get(string id)
         {
-            return "value";
+            return id;
         }
 
         // POST api/values
